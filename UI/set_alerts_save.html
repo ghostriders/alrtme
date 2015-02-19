@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="set_alerts.css" rel="stylesheet">
+        <!-- FONTAWESOME css -->
+         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        
+        <!--DATEPICKER -->
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">
+          <script>
+          $(function() {
+            $( "#datepicker" ).datepicker();
+          });
+          </script>
+          <script type="text/javascript" src="set_alerts.js"></script>
+        
+        <!-- TIMEPICKER -->
+        
+        
+        <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.timepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery.timepicker.css" />
+       <script type="text/javascript" src="lib/bootstrap-datepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker.css" />
+        <script type="text/javascript" src="lib/site.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/site.css" />-->
+        
+
+    </head>
+    
+    <body>
+        
+    <span id="logo" title="AlrtMe">
+    
+       <h1><a class="link2home" href="index.html">AlrtMe</a></h1>
+       
+        
+    </span>
+    
+        <div class="container">
+        
+            <h3 class="title">SET ALERTS</h3>    
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a href="#">GENERAL</a></li>
+                    <li><a href="#">HEALTH</a></li>
+                    <li><a href="#">FINANCE</a></li>
+                    <li><a href="/add_category.html">+</a></li>
+                </ul>    
+        
+          <table style="width:60%" class="main_table">
+              <br><br>
+              <tr>
+              
+                    <td>
+                        <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>
+                  
+                  <td>Car service</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                        <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-times-circle fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>
+                      
+              </tr>
+              
+              <tr>
+              
+                    <td>
+                        <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>
+                  
+                  <td>Bike Insurance</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                        <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-times-circle fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>  
+              </tr>
+              
+              <tr>
+              
+                    <td>
+                        <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>
+                  
+                  <td>Kids school drop</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                        <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-times-circle fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>
+                      
+              </tr>
+              <tr>
+                <td>     <span class="fa-stack fa-2x">
+                            <i class="fa fa-stack-1x"></i>
+                            <i class="fa fa-bullseye fa-stack-1x text-primary"></i>
+                         </span></td>          
+                <td>Choose Alerts</td>
+                <td>Date</td>
+                <td>Time</td>
+              </tr>
+              
+              
+              <tr>
+                <td></td>
+                <td>
+                <select name="select_alert" width=300 STYLE="width:350">
+                    <option value="" selected>Select a Alert</option>
+                    <option value="car_service">Car service</option>
+                    <option value="bike_service">Bike service</option>
+                    <option value="car_insurance">Car insurance</option>
+                    <option value="bike_insurance">Bike insurance</option>
+                    <option value="kid_school_drop">Kid school drop</option>
+                    <option value="kid_school_pickup">kid school pickup</option>
+                </select>  
+                </td>
+                <td>
+                <input type="text" id="datepicker" placeholder="DD/YY/MMMM">
+                </td>
+                <td>
+                <input type="text" id="timepicker"  placeholder="HH:MM">
+                </td>
+              </tr>
+              
+              <tr>
+                <td></td>
+                <td>Alert me before:</td>
+                <td>
+                                
+                <dl class="dropdown1"> 
+  
+                    <dt>
+                    <a href="#">
+                      <span class="hida" onclick="alert_before_click_select ()">Select</span>    
+                      <p class="multiSel1"></p>  
+                    </a>
+                    </dt>
+
+                    <dd>
+                        <div class="mutliSelect">
+                            <ul>
+                                <li><input type="checkbox" value="hour" /> Hour</li>
+                                <li><input type="checkbox" value="day" /> Day</li>
+                                <li><input type="checkbox" value="week" /> Week</li>
+                                <li><input type="checkbox" value="month" /> Month</li>
+                            </ul>
+                        </div>
+                    </dd>
+  
+                    </dl>
+                   
+                                  
+                </td>
+              </tr>
+              
+              <tr>
+                <td></td>
+                <td>Send Alerts to:</td>
+                <td>
+                
+                
+                
+                <dl class="dropdown2"> 
+  
+                    <dt>
+                    <a href="#">
+                      <span class="hida" onclick="alert_to_click_select()">Select</span>    
+                      <p class="multiSel2"></p>  
+                    </a>
+                    </dt>
+
+                    <dd>
+                        <div class="mutliSelect">
+                            <ul>
+                                <li><input type="checkbox" value="sms" /> SMS</li>
+                                <li><input type="checkbox" value="email" /> EMAIL</li>
+                                <li><input type="checkbox" value="facebook" /> FACEBOOK</li>
+                                <li><input type="checkbox" value="whatsapp" /> WHATSAPP</li>
+                            </ul>
+                        </div>
+                    </dd>
+  
+                    </dl>
+                   
+                </td>
+              </tr>
+                      
+            
+          </table>
+                </div>
+                <div class="sample_text_msg_box"> 
+                <h4>Your ALERT will appear as below: (CAN BE MODIFIED)</h4>
+                <textarea class="textarea" cols="100" rows="3"><<Name>>, Your 'car service' is due on DD/MM/YYYY at HH:MM - AlrtMe</textarea>
+                </div>
+        
+           <div class="container">
+           <table style="width:20%" class="main_table">
+                <tr>
+                    <td>
+                    <span class="fa-stack fa-2x">
+                            <i class="fa  fa-stack-1x"></i>
+                            <i class="fa fa-plus-circle fa-stack-1x text-primary"></i>
+                         </span>
+                    </td>
+                    <td>
+                        <a href="#"><h4>ADD ALERT</h4></a>
+                    </td>
+                    
+                </tr>
+        
+            </table>
+               
+            </div>
+        <div class="buttons">
+        
+            <!--<a href="#"><button onclick="myFunction()">ADD ALERT</button></a>-->
+            <a href="/set_alerts_test.html"><button onclick="myFunction()">TEST</button></a>
+            <a href="/set_alerts_save.html"><button onclick="myFunction()">SAVE</button></a>
+            <a href="/set_alerts_set.html"><button onclick="myFunction()">SET</button></a>
+            <a href="/alert_summary.html"><button onclick="myFunction()">CANCEL</button></a>
+        </div>    
+    
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+ 
+        
+    <!-- ALL SCRIPTS -->
+        
+            
+
+    </body>
+    
+    
+
+    
+</html>
